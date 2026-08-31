@@ -29,7 +29,7 @@ Explaination: 6!/(6-3)! = 6!/3! = 720/6 = 120.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T09:16:12.620Z  
+**Submitted:** 2026-08-31T09:18:47.753Z  
 
 ```java
 class Solution {
