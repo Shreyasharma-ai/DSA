@@ -1,0 +1,63 @@
+# Perfect Number
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+A  **perfect number**  is a  **positive integer**  that is equal to the sum of its  **positive divisors**, excluding the number itself. A  **divisor**  of an integer `x` is an integer that can divide `x` evenly.
+
+Given an integer `n`, return `true` *if* `n` *is a perfect number, otherwise return* `false`.
+
+ 
+
+ **Example 1:** 
+
+```
+Input: num = 28
+Output: true
+Explanation: 28 = 1 + 2 + 4 + 7 + 14
+1, 2, 4, 7, and 14 are all divisors of 28.
+
+```
+
+ **Example 2:** 
+
+```
+Input: num = 7
+Output: false
+
+```
+
+ 
+
+ **Constraints:** 
+
+- 1 <= num <= 108
+
+## Solution
+
+**Language:** Java  
+**Runtime:** 1 ms (beats 95.40%)  
+**Memory:** 42.2 MB (beats 25.91%)  
+**Submitted:** 2026-09-01T05:33:50.350Z  
+
+```java
+class Solution {
+    public boolean checkPerfectNumber(int n) {
+        if(n<=1) return false ;
+        int sum=1;
+        for(int i=2;i*i<=n;i++){
+            if(n%i==0){
+            sum+=i+n/i;
+            }
+        }
+        return sum==n;
+
+        
+    }
+}
+```
+
+---
+
+[View on LeetCode](https://leetcode.com/problems/perfect-number/)
