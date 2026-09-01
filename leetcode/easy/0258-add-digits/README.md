@@ -41,25 +41,19 @@ Output: 0
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 98.11%)  
-**Memory:** 42.3 MB (beats 91.12%)  
-**Submitted:** 2026-09-01T05:13:29.635Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.5 MB (beats 63.29%)  
+**Submitted:** 2026-09-01T05:19:42.704Z  
 
 ```java
 class Solution {
-    public int sumofdigit(int n){
-        int sum=0;
-        while(n!=0){
-            sum+=n%10;
-            n/=10;
-        }
-        return sum;
-    }
     public int addDigits(int num) {
-        while(num>9){
-            num=sumofdigit(num);
-        }
-        return num;
+        if(num==0) return 0;
+        if(num%9==0) return 9;
+
+
+        return num%9;
+        
     }
 }
 ```
