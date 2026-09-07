@@ -14,13 +14,14 @@ public class Main {
 
     public static void ArrayOperations(int[] arr, int n) {
         // Write your code here
-        int sum=0;
-        for(int x:arr) sum+=x;
-            int average=sum/n;
-            int max=arr[0];
-            for(int x:arr){
-                if(x>max)max=x;
-            }
-            System.out.println(sum+" "+average+" "+max);
+        int sum=0,max=arr[0];
+        for(int i=0;i<n;i++){
+            sum+=arr[i];
+            if(max<arr[i]) max=arr[i];
+ 
         }
+        int ave=sum/n;
+        System.out.println(sum+" "+ave+" "+max);
     }
+    
+}
