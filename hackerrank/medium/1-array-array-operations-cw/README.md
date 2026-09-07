@@ -69,7 +69,7 @@ The sum of all the elements of the array 1+0+(-1)+0+0 is 0, the average (1+0+(-1
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T07:09:16.881Z  
+**Submitted:** 2026-09-07T07:15:00.436Z  
 
 ```java
 import java.util.*;
@@ -88,16 +88,17 @@ public class Main {
 
     public static void ArrayOperations(int[] arr, int n) {
         // Write your code here
-        int sum=0;
-        for(int x:arr) sum+=x;
-            int average=sum/n;
-            int max=arr[0];
-            for(int x:arr){
-                if(x>max)max=x;
-            }
-            System.out.println(sum+" "+average+" "+max);
+        int sum=0,max=arr[0];
+        for(int i=0;i<n;i++){
+            sum+=arr[i];
+            if(max<arr[i]) max=arr[i];
+ 
         }
+        int ave=sum/n;
+        System.out.println(sum+" "+ave+" "+max);
     }
+    
+}
 
 ```
 
