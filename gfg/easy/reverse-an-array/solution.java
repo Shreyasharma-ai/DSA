@@ -5,9 +5,9 @@ class Solution {
         int i=0,j=n-1;
         
         while(i<j){
-            int temp = arr[i];
+            int sh = arr[i];
             arr[i] = arr[j];
-            arr[j] = temp;
+            arr[j] = sh;
             i++;
             j--;
         }
