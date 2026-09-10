@@ -35,7 +35,7 @@ Explanation: The array has only single element, hence the reversed array is same
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-10T07:12:42.958Z  
+**Submitted:** 2026-09-10T07:14:18.768Z  
 
 ```java
 class Solution {
@@ -45,9 +45,9 @@ class Solution {
         int i=0,j=n-1;
         
         while(i<j){
-            int temp = arr[i];
+            int sh = arr[i];
             arr[i] = arr[j];
-            arr[j] = temp;
+            arr[j] = sh;
             i++;
             j--;
         }
