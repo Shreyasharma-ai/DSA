@@ -30,21 +30,22 @@ Explanation: The only common divisor of 3 and 17 is 1. Hence, the answer is 1.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T09:10:40.073Z  
+**Submitted:** 2026-09-18T09:19:53.514Z  
 
 ```java
 class Solution {
-    int commDiv(int a, int b) {
-        // code here
+    int commDiv(int a, int b){
         int count=0;
-        for(int i=1;i<=a && i<=b;i++){
-            if(a%i==0 && b%i==0){
-                count++;
+        int min=a;
+        if(b<a) min=b;
+            for(int i=1;i<=min;i++){
+                if(a%i==0 && b%i==0){
+                    count++;
+                }
             }
+            return count;
         }
-        return count;
     }
-};
 ```
 
 ---
