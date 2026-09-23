@@ -59,7 +59,7 @@ Explanation
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T04:24:46.629Z  
+**Submitted:** 2026-09-23T04:29:21.943Z  
 
 ```java
 import java.io.*;
@@ -70,9 +70,9 @@ public class Main {
     public static void SecondLargest(int[] arr, int n) {
         // Write code here
         int largest=arr[0];
-        int SecondLargest=1;
+        int SecondLargest=Integer.MIN_VALUE;
          
-         for(int i=1;i<arr.length;i++){
+         for(int i=0;i<arr.length;i++){
             if(arr[i]>largest){
                 SecondLargest = largest;
                 largest=arr[i];
