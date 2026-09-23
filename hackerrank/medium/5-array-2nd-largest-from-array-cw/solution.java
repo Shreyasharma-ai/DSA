@@ -6,9 +6,9 @@ public class Main {
     public static void SecondLargest(int[] arr, int n) {
         // Write code here
         int largest=arr[0];
-        int SecondLargest=1;
+        int SecondLargest=Integer.MIN_VALUE;
          
-         for(int i=1;i<arr.length;i++){
+         for(int i=0;i<arr.length;i++){
             if(arr[i]>largest){
                 SecondLargest = largest;
                 largest=arr[i];
