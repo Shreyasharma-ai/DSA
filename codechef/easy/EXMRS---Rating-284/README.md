@@ -56,13 +56,35 @@ Chef earns no marks and loses $5 \times 2=10$ marks. His final score is $-10$, w
 
 ## Solution
 
-**Language:** Python  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T03:59:31.732Z  
+**Submitted:** 2026-09-29T04:03:51.988Z  
 
-```py
-# cook your dish here
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(Systen.in);
+		int c,m,w,p,r;
+		c=sc.nextInt();
+		m=sc.nextInt();
+		w=sc.nextInt();
+		p=sc.nextInt();
+		r=sc.nextInt();
+		
+		if (c*m-w*p>=r) System.out.println("yes");
+		else System.out.println("No");
+
+
+	}
+}
 
 ```
 
