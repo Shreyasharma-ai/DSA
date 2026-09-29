@@ -82,7 +82,7 @@ Therefore, no energy is required.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T04:17:34.501Z  
+**Submitted:** 2026-09-29T04:19:26.949Z  
 
 ```java
 import java.util.*;
@@ -104,7 +104,7 @@ class Codechef
 		int min=array[0];
 		for(int i=0;i<n;i++) if(array[i]<min) min=array[i];
 		
-		int sum=0;
+		long sum=0;
 		for(int i=0;i<n;i++){
 		    sum+=array[i]-min;
 		}
