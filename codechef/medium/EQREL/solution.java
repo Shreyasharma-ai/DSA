@@ -17,7 +17,7 @@ class Codechef
 		int min=array[0];
 		for(int i=0;i<n;i++) if(array[i]<min) min=array[i];
 		
-		int sum=0;
+		long sum=0;
 		for(int i=0;i<n;i++){
 		    sum+=array[i]-min;
 		}
