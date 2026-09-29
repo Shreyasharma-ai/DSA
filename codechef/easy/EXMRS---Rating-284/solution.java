@@ -7,7 +7,7 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		Scanner sc=new Scanner(Systen.in);
+		Scanner sc=new Scanner(System.in);
 		int c,m,w,p,r;
 		c=sc.nextInt();
 		m=sc.nextInt();
@@ -15,8 +15,8 @@ class Codechef
 		p=sc.nextInt();
 		r=sc.nextInt();
 		
-		if (c*m-w*p>=r) System.out.println("yes");
-		else System.out.println("No");
+		if (c*m - w*p >=r) System.out.println("YES");
+		else System.out.println("NO");
 
 
 	}
